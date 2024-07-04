@@ -1,0 +1,21 @@
+The following program permits bank account users to manage their accounts. It allows them to make deposits and withdrawals as well as displaying account information. The BankAccount class encapsulates the account's data and handles said information in a controlled manner. In this way, data integrity is sustained and the program remains user friendly.
+
+The following attributes all serve a purpose:
+_accountNumber: Creates an unique identifier for the bank account
+_accountHolder: Contains the name of the bank account holder.
+_balance: The current bank account balance.
+All of the above attributes are protected as indicated by the _(underscore).
+
+The following methods made this program successful:
+
+__init__(self): accountNumber, accountHolder, initialBalance: Initializes a new instance of the BankAccount class with the stated parameters. #Its important to include the __(double underscore or the Bank Account class will not be accessible)
+
+deposit(self): deposits a specific amount in to the account, but the number must be positive for the balance to update or the program will print an error message.
+
+withdraw(self, amount): withdraws a specific amount from the account, but the number must be positive and less than or equal to current balance in order for the account to update. Otherwise, an error will print.
+
+getBalance(self): Retrieves the current balance of the account.
+
+displayAccountInfo(self): This method displays the account information, such as account number, account holder's name, and current balance.
+
+To run this program, I dedfined class definition correctly (i.e. changed _init_ to __init__) and include a main function to interact with BankAccount objects. The main program created two objects, account1 and account2, and performed deposits and withdraws. Once the transactions were complete, it displayed the updated information. Run the python3 bank.py command in the terminal and see the results of the operations. Check for proper error messages for invalid transactions.
